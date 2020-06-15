@@ -56,7 +56,7 @@ const CreatePoint = () => {
         const getItems = async () => {
             try {
                 const response = await api.get('/items')
-                setItems(response.data.serializeItem)
+                setItems(response.data.items)
 
             } catch (error) {
                 alert('Deu ruim')
